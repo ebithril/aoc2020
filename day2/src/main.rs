@@ -50,7 +50,6 @@ fn part2(passwords: &Vec<String>)
         let mut rest = rest.split_off(1);
         rest.truncate(1);
         let pass_to_test = pass_to_test.split_off(1);
-        let mut number_of_chars = 0;
 
         let first_char: char = pass_to_test.as_bytes()[from-1] as char;
         let second_char: char = pass_to_test.as_bytes()[to-1] as char;
