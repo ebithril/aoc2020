@@ -1,8 +1,7 @@
 use std::fs::File;
 use std::io::prelude::*;
 
-fn parse_password(password: &String) -> (usize, usize, String, String)
-{
+fn parse_password(password: &String) -> (usize, usize, String, String) {
     let mut pass = String::from(password);
     let space = pass.find(' ').unwrap();
     let mut rest = pass.split_off(space);
@@ -19,8 +18,7 @@ fn parse_password(password: &String) -> (usize, usize, String, String)
     (from, to, rest, pass_to_test)
 }
 
-fn part1(passwords: &Vec<String>)
-{
+fn part1(passwords: &Vec<String>) {
     let mut result = 0;
     for password in passwords {
         let (from, to, rule, pass) = parse_password(&password);
@@ -41,8 +39,7 @@ fn part1(passwords: &Vec<String>)
     println!("Part1: {}", result);
 }
 
-fn part2(passwords: &Vec<String>)
-{
+fn part2(passwords: &Vec<String>) {
     let mut result = 0;
     for password in passwords {
         let (from, to, rule, pass) = parse_password(&password);
