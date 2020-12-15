@@ -35,7 +35,7 @@ fn part2(numbers: &Vec<i32>)
 }
 
 fn main() -> std::io::Result<()> {
-    let mut file = File::open("input.txt")?;
+    let mut file = File::open("input1.txt")?;
 
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;

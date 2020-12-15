@@ -59,7 +59,7 @@ fn part2(passwords: &Vec<String>) {
 }
 
 fn main() -> std::io::Result<()> {
-    let mut file = File::open("input.txt")?;
+    let mut file = File::open("input2.txt")?;
 
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;

@@ -56,7 +56,7 @@ fn part2(boarding_passes: &Vec<String>)
 }
 
 fn main() -> std::io::Result<()> {
-    let file = File::open("input.txt")?;
+    let file = File::open("input5.txt")?;
     let lines = io::BufReader::new(file).lines();
 
     let mut boarding_passes: Vec<String>  = Vec::new();

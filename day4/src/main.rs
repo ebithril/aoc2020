@@ -163,7 +163,7 @@ fn part2(passports: &Vec<String>)
 }
 
 fn main() -> std::io::Result<()> {
-    let file = File::open("input.txt")?;
+    let file = File::open("input4.txt")?;
     let lines = io::BufReader::new(file).lines();
 
     let mut passports: Vec<String>  = Vec::new();

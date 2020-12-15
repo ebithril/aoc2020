@@ -56,7 +56,7 @@ fn part2(input: &Vec<String>) {
 }
 
 fn main() -> std::io::Result<()> {
-    let mut file = File::open("input.txt")?;
+    let mut file = File::open("input3.txt")?;
 
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;
